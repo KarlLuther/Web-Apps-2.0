@@ -595,6 +595,23 @@ footer a:hover {
   footer {
     padding: 0 15px;
   }
+
+  /* Single Product */
+
+  #pro-details {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  #pro-details .single-product-image {
+    width: 100% !important;
+    margin-right: 0px !important;
+  }
+
+  #pro-details .single-product-details {
+    width: 100% !important;
+  }
 }
 
 /* SHOP PAGE */
