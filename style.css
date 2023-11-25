@@ -604,27 +604,10 @@ footer a:hover {
     flex-direction: column;
   }
 
-  #pro-details .single-product-image {
-    width: 100% !important;
-    margin-right: 0px !important;
-  }
+  /* logo */
 
-  #pro-details .single-product-details {
-    width: 100% !important;
-  }
-}
-
-@media (max-width: 477px) {
-  /* Blog Page */
-
-  #blog {
-    padding: 100px 20px 0 20px;
-  }
-
-  #blog .blog-box {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
+  .logo {
+    width: 250px;
   }
 }
 
@@ -734,7 +717,11 @@ footer a:hover {
 /* Blog Page */
 
 #shop-header.blog-header {
-  background-image: url("./imgs/blog-banner.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("./imgs/blog-banner.webp");
+  background-size: cover;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(imgs/sm-banner-2.webp); */
 }
 
 #blog {
@@ -801,4 +788,46 @@ footer a:hover {
   font-size: 70px;
   font-weight: 700;
   color: #297bdf;
+}
+
+@media (max-width: 477px) {
+  /* Blog Page */
+
+  #blog {
+    padding: 100px 20px 0 20px !important;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  #blog .blog-img {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  /* возможно стоит эту хуйню засунуть в планшетный брейк-поинт */
+  #pro-details .single-product-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #pro-details .single-product-details {
+    width: 100%;
+  }
+
+  header {
+    padding: 20px 40px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  #blog .blog-details {
+    width: 100%;
+  }
 }
